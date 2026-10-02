@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Little Love Story ♡</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Bitcount+Ink:wght@100..900&family=Noto+Sans+Myanmar:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@300;400;500;600&display=swap');
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Poppins',sans-serif;
+  color:#613f63;
+  background:#fcf5ff;
+  overflow-x:hidden;
+  font-family: "Noto Sans Myanmar", "Pyidaungsu", sans-serif;
+}
+body:before{
+  content:"";
+  position:fixed;inset:0;pointer-events:none;opacity:.28;
+  background-image:radial-gradient(#e9b7ae 1px,transparent 1px);
+  background-size:24px 24px;z-index:-2;
+}
+nav{
+  position:fixed;top:0;left:0;width:100%;z-index:20;
+  padding:16px 6%;display:flex;justify-content:space-between;align-items:center;
+  background:rgba(241, 101, 232, 0.158);backdrop-filter:blur(12px);
+  border-bottom:1px solid rgba(180,100,110,.1);
+}
+.logo{font-family:'DM Serif Display';font-size:25px;color:#d66b76}
+nav a{color:#b775d5;text-decoration:none;margin-left:20px;font-size:13px}
+nav a:hover{color:#bf56b1}
+.hero{
+  min-height:100vh;display:flex;align-items:center;justify-content:center;
+  text-align:center;padding:110px 20px 70px;position:relative;
+}
+.hero-inner{max-width:800px}
+.eyebrow{letter-spacing:4px;text-transform:uppercase;font-size:11px;color:#c77b82}
+h1,h2{font-family: "Bitcount Ink", sans-serif;font-weight:400}
+h1{font-size:clamp(55px,10vw,100px);line-height:.95;color:#b94f65;margin:20px 0}
+.hero p{font-size:15px;line-height:1.9;max-width:600px;margin:auto;color:#795c64}
+.btn{
+  display:inline-block;margin-top:30px;padding:13px 27px;border-radius:30px;
+  background:linear-gradient(145deg,#d86dc8,#f8d3d2);color:rgb(72, 58, 58);text-decoration:none;font-size:13px;
+  box-shadow:0 10px 25px rgba(216,109,121,.22);transition:.25s;
+  font-family: "Pacifico", cursive;
+}
+.btn:hover{transform:translateY(-3px)}
+.heart{position:absolute;font-size:22px;animation:float 4s ease-in-out infinite;opacity:.55}
+.h1{left:10%;top:28%}.h2{right:12%;top:20%;animation-delay:1s}.h3{left:18%;bottom:18%;animation-delay:2s}.h4{right:20%;bottom:25%;animation-delay:1.5s}
+@keyframes float{50%{transform:translateY(-18px) rotate(8deg)}}
+
+section{padding:95px 7%}
+.section-title{text-align:center;margin-bottom:45px}
+.section-title h2{font-size:46px;color:#a94e61}
+.section-title p{font-size:13px;color:#92747b;margin-top:8px}
+
+.story{max-width:850px;margin:auto;display:grid;gap:20px}
+.story-card{
+  background:white;border:1px solid #f2dfe0;border-radius:22px;padding:25px 28px;
+  box-shadow:0 12px 35px rgba(120,70,75,.07);
+}
+.story-card span{font-size:11px;letter-spacing:2px;color:#d2757e}
+.story-card h3{margin:7px 0;color:#784752;font-size:18px}
+.story-card p{font-size:13px;line-height:1.9;color:#806870}
+
+.gallery{
+  max-width:1050px;margin:auto;display:grid;
+  grid-template-columns:repeat(3,1fr);gap:20px;
+}
+.photo{
+  height:330px;background:#f4d9d2;border-radius:18px;overflow:hidden;
+  position:relative;box-shadow:0 12px 30px rgba(120,70,75,.08);
+}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+.photo .placeholder{
+  height:100%;display:flex;align-items:center;justify-content:center;
+  text-align:center;padding:20px;color:#a875a8;font-size:13px;
+  background:linear-gradient(145deg,#c7a0e7,#f8d3d2);
+}
+.photo:nth-child(2){transform:translateY(30px)}
+.photo:nth-child(3){transform:translateY(-10px)}
+@media(max-width:700px){
+  .gallery{grid-template-columns:1fr}
+  .photo,.photo:nth-child(2),.photo:nth-child(3){transform:none;height:280px}
+}
+
+.letter-wrap{max-width:720px;margin:auto}
+.letter{
+  background:#fff;border-radius:6px;padding:42px 38px;position:relative;
+  box-shadow:0 15px 40px rgba(120,70,75,.09);
+  border:1px solid #f0dfd9;
+}
+.letter:before{
+  content:"♡";position:absolute;right:25px;top:18px;color:#e5a0a6;font-size:28px
+}
+.letter h3{font-family:'DM Serif Display';font-size:30px;color:#a94e61;margin-bottom:20px}
+.letter p{font-family:Georgia,serif;font-size:15px;line-height:2;color:#725a61}
+
+.counter{
+  display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin-top:30px
+}
+.time-box{
+  min-width:125px;padding:22px 15px;background:white;border-radius:18px;
+  border:1px solid #f0dddd;text-align:center;box-shadow:0 10px 25px rgba(120,70,75,.06);
+  background:linear-gradient(145deg,#d86dc8,#f8d3d2);color:rgb(72, 58, 58);
+  
+}
+
+.time-box strong{
+  
+  display:block;font-family: "Pacifico", cursive;font-size:30px;color:#ffffff}
+.time-box small{font-family: "Pacifico", cursive;font-size:10px;text-transform:uppercase;letter-spacing:2px;color:#ffffff}
+
+.surprise{text-align:center}
+.surprise button{
+  border:0;background:linear-gradient(145deg,#d86dc8,#f8d3d2);color:rgb(72, 58, 58);padding:15px 30px;border-radius:30px;
+  cursor:pointer;font-family:inherit;font-size:13px;box-shadow:5px 5px 10px 10px rgba(216,109,121,.2)
+}
+.surprise button:hover{transform:translateY(-3px)}
+
+#secret{display:none;max-width:600px;margin:25px auto 0;padding:28px;border-radius:20px;background:#fff0ed;color:#865660;line-height:1.9}
+#secret.show{display:block;animation:pop .5s ease}
+@keyframes pop{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}
+
+footer{text-align:center;padding:50px 20px;background:#f9e7e3;color:#8c626b}
+footer .big{font-family: "Pacifico", cursive;font-size:32px;color:#b654ae;margin-bottom:8px}
+footer p{font-size:12px}
+</style>
+</head>
+
+<body>
+<nav>
+  <div class="logo">H + S ♡</div>
+  <div>
+    <!--<a href="#story">Story</a>-->
+    <a href="#memories">Memories</a>
+    <a href="#surprise">Letter</a>
+    <!--<a href="#surprise">Surprise</a>-->
+  </div>
+</nav>
+
+<header class="hero">
+  <span class="heart h1">♡</span><span class="heart h2">♥</span>
+  <span class="heart h3">♡</span><span class="heart h4">♥</span>
+  <div class="hero-inner">
+    <div class="eyebrow">October 2, 2025 — Forever</div>
+    <h1>Happy<br>Anniversary</h1>
+    <p>
+      To မောင်မောင်, my favorite person.💗<br>
+      အတူရှိနေရတဲ့အချိန်တိုင်းက သဲသဲအတွက် အလှပဆုံး အမှတ်တရတွေပါပဲရှင့် 
+    </p>
+    <p>Happy 1yr Anniversary ပါ မောင်ရေ🥰</p>
+    <a class="btn" href="#memories"> Our photo ♡</a>
+  </div>
+</header>
+
+<!--<section id="story">
+  <div class="section-title">
+    <h2>Our Little Story</h2>
+    <p>Some moments are too precious to forget.</p>
+  </div>
+  <div class="story">
+    <div class="story-card">
+      <span>THE BEGINNING</span>
+      <h3>Our first hello</h3>
+      <p>It all started with a simple hello. We didn't know that one little moment would become such a beautiful part of our lives.</p>
+    </div>
+    <div class="story-card">
+      <span>THE MOMENT</span>
+      <h3>When we became “us”</h3>
+      <p>Somewhere between the conversations, the laughter, and the little things, we became something special.</p>
+    </div>
+    <div class="story-card">
+      <span>TODAY</span>
+      <h3>Still choosing you</h3>
+      <p>One year, countless memories, and so many more chapters waiting for us. I'm grateful for every one of them.</p>
+    </div>
+  </div>
+</section>-->
+
+<section id="memories">
+  <div class="section-title">
+    <h2>Our Memories</h2>
+    <p>Replace these with your favorite photos ♡</p>
+  </div>
+  <div class="gallery">
+    <div class="photo">
+     <img src="images/6195105165157798416.jpg" alt="">  
+  </div>
+    <div class="photo">
+      <img src="images/6195105165157798417.jpg" alt="">
+  </div>
+  <div class="photo">
+   <img src="images/6195105165157798418.jpg" alt="">  
+</div>
+  </div>
+</section>
+
+<section>
+  <div class="section-title">
+    <h2>Our Time Together</h2>
+    <p>And every second is worth remembering.</p>
+  </div>
+  <div class="counter">
+    <div class="time-box"><strong id="days">0</strong><small>Days</small></div>
+    <div class="time-box"><strong id="hours">0</strong><small>Hours</small></div>
+    <div class="time-box"><strong id="minutes">0</strong><small>Minutes</small></div>
+    <div class="time-box"><strong id="seconds">0</strong><small>Seconds</small></div>
+  </div>
+</section>
+
+<!--<section id="letter">
+  <div class="section-title">
+    <h2>A Letter For You</h2>
+  </div>
+  <div class="letter-wrap">
+    <div class="letter">
+      <h3>Dear Alex,</h3>
+      <p>
+       
+      </p>
+    </div>
+  </div>
+</section>-->
+
+<section id="surprise" class="surprise">
+  <div class="section-title">
+    <h2>A Letter For You</h2>
+    <p>There is a little surprise waiting for you.</p>
+  </div>
+  <button onclick="showSecret()"> <a href="secret"></a>♡ 𝓦𝓸𝓻𝓭𝓼 𝓕𝓻𝓸𝓶 𝓜𝔂 𝓗𝓮𝓪𝓻𝓽 ♡ ♡</button>
+  <div id="secret">
+    မောင်ရေ… ♡
+
+သဲသဲတို့နှစ်ယောက်အတူဖြတ်သန်းလာခဲ့တဲ့အချိန်တွေကို ပြန်တွေးကြည့်တိုင်း ပျော်ခဲ့ရတဲ့အချိန်တွေ၊ ရယ်မောခဲ့ရတဲ့အချိန်တွေ၊ တစ်ခါတလေ စိတ်ကောက်စိတ်ဆိုးခဲ့ရတဲ့အချိန်တွေအထိ အားလုံးက သဲသဲအတွက် တန်ဖိုးရှိတဲ့အမှတ်တရလေးတွေပါပဲ။
+အချိန်တွေ ဘယ်လောက်ပဲကြာသွားပါစေ၊ အတူတူရှိခဲ့တဲ့ အမှတ်တရတွေကို တန်ဖိုးထားပြီးသိမ်းထားချင်ပါတယ်။ 
+ရှေ့ဆက်မယ့်နေ့ရက်တိုင်းမှာလည်း ပျော်စရာလေးတွေ အတူရှာရင်း၊ တစ်ယောက်ကိုတစ်ယောက် နားလည်ပေးရင်းနဲ့ အမှတ်တရအသစ်လေးတွေ ဆက်ပြီးဖန်တီးသွားကြမယ်နော်ရှင့်။ ♡
+တစ်သက်လုံးသဲသဲဘေးမှာရှိသွားပေးပါ သဲသဲအမျိုးသားလေး❤️ အရမ်းချစ်တယ်နော်🥰
+
+    <br><br><strong>I’m so lucky to have you. ♡ Thank you for being in my life, Mg Mg.❤️</strong>
+  </div>
+</section>
+
+<footer>
+  <div class="big">HMH + SBS ♡</div>
+  <p>Made with love • October 2, 2026</p>
+</footer>
+
+<script>
+const startDate = new Date("2025-10-02T00:00:00");
+
+function updateCounter(){
+  const now = new Date();
+  let diff = Math.max(0, now - startDate);
+  const sec = Math.floor(diff / 1000);
+  const days = Math.floor(sec / 86400);
+  const hours = Math.floor((sec % 86400) / 3600);
+  const minutes = Math.floor((sec % 3600) / 60);
+  const seconds = sec % 60;
+  document.getElementById("days").textContent = days;
+  document.getElementById("hours").textContent = hours;
+  document.getElementById("minutes").textContent = minutes;
+  document.getElementById("seconds").textContent = seconds;
+}
+updateCounter();
+setInterval(updateCounter,1000);
+
+function showSecret(){
+  document.getElementById("secret").classList.toggle("show");
+}
+</script>
+</body>
+</html>
